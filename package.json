@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next"
+    "start": "next",
+    "postbuild": "next-on-netlify"
   },
   "author": "",
   "license": "ISC",
