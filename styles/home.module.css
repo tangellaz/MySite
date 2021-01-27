@@ -272,7 +272,6 @@ float: left;
 /* FOOTER */
 
 .footer {
-  height: 200px;
   padding: 22px;
   font-size: 12px;
 }
@@ -400,21 +399,19 @@ float: left;
 
 /*Media Queries*/
 @media only screen and (max-width: 600px) {
-
   .footNav {
     display: flex;
     flex-direction: column;
     color: #1d1d1f;
     border-bottom: 1px solid #d2d2d7;
   }
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
   .footNav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     color: #1d1d1f;
     border-bottom: 1px solid #d2d2d7;
   }
@@ -424,7 +421,7 @@ float: left;
 @media only screen and (min-width: 768px) {
   .footNav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     color: #1d1d1f;
     border-bottom: 1px solid #d2d2d7;
   }
@@ -434,7 +431,7 @@ float: left;
 @media only screen and (min-width: 992px) {
   .footNav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     color: #1d1d1f;
     border-bottom: 1px solid #d2d2d7;
   }
@@ -444,7 +441,7 @@ float: left;
 @media only screen and (min-width: 1200px) {
   .footNav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     color: #1d1d1f;
     border-bottom: 1px solid #d2d2d7;
   }
