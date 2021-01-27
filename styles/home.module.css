@@ -401,7 +401,7 @@ float: left;
 @media only screen and (max-width: 600px) {
   .footNav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     color: #1d1d1f;
     border-bottom: 1px solid #d2d2d7;
   }
