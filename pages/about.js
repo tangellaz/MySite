@@ -10,17 +10,14 @@ const About = () => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
 
-    <body className={styles.body}>
-      {/*<div onScroll={() => {const {offsetTop}=navRef.current}}>*/}
-      <header className={styles.header}>
-        <div id="navbar">
-          <Navigation/>
-        </div>
-      </header>
+    <header className={styles.header}>
+      <div id="navbar">
+        <Navigation/>
+      </div>
+    </header>
 
-      <main>
-      </main>
-    </body>
+    <main>
+    </main>
 
     <div className={styles.zone, styles.yellow}>
       <footer className={styles.footer}>Footer</footer>
