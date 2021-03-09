@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\n\nconst StylesNav = () => /*#__PURE__*/_jsx(\"style\", {\n  jsx: \"true\",\n  children: `\n    .active {\n      color: #4039a8;\n      border-bottom: 2px solid #4039a8;\n    }\n  `\n});\n\nexport default StylesNav;","map":null,"metadata":{},"sourceType":"module"}
