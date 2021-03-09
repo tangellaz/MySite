@@ -1,0 +1,162 @@
+
+/* NAV */
+
+.nav{
+  position: sticky;
+  top: 0px;
+  left: 0;
+  z-index: 999;
+
+  background: #FBFBFD; /* Old browsers */
+  box-shadow: 0 0 2px 0 grey;
+}
+
+.nav:hover {
+/*  -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+*/
+}
+
+.sticky {
+  position: sticky;
+  top: 0px;
+  left: 0;
+  z-index: 999;
+}
+
+.headerTop {
+  height: 54px;
+}
+
+.a {    
+  padding: 0px;
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  flex: 1;
+}
+
+.a:hover {
+  color: #4039a8;
+  /*background-color: #60abf8;*/
+  cursor: pointer;
+  /*background: linear-gradient(top, #4096ee 0%,#60abf8 44%,#7abcff 100%);*/
+}
+
+.ul {
+  display: flex;
+  list-style: none;
+  height: 54px;
+  /*font-size: 22px;*/
+  margin: 0px;
+  padding: 0px;
+  /*box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);*/
+}
+
+.li {
+  padding: 11px 6px 11px 6px;
+  display: flex;
+  align-items: center;
+/*  font-size: 18px;*/
+}
+
+.liContact {
+  margin-left: auto;
+  padding: 11px 6px 11px 6px;
+  display: flex;
+  align-items: center;
+/*  font-size: 18px;*/
+}
+
+.icon2 {
+  height: 42px;
+  padding: 6px 6px 6px 6px;
+  cursor: pointer;
+}
+
+.dropBtn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.caret{
+  margin-left: 0px;
+  width: 16px;
+  height: 16px;
+}
+
+
+.dropBtn {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 0;
+  color: #000000;
+  /*font-size: 22px;*/
+  padding: 0px 6px;
+  cursor: default;
+}
+
+.dropdown:hover p {
+  color: #4039a8 ;
+}
+
+.dropdown:hover button{
+  color: #4039a8 ;
+  cursor: pointer;
+  /*font-size: 22px;*/
+}
+
+.aDrop {    
+  padding: 0px;
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  flex: 1;
+}
+
+.dropdown:hover .aDrop{
+  color: #4039a8 ;
+  cursor: pointer;
+}
+
+.dropdown polygon {
+    fill:#000000;
+    stroke:#000000;
+  }
+
+.dropdown:hover polygon {
+    fill:#4039a8 ;
+    stroke:#4039a8 ;
+  }
+
+.dropdown polyline {
+    fill: none;
+    stroke:#000000;
+    stroke-width: 1.5px;
+  }
+
+.dropdown:hover polyline {
+    stroke:#4039a8 ;
+  }
+
+.dropList{
+  display: none;
+  padding: 0px;
+  list-style: none;
+  /*font-size: 18px;*/
+  transition: all .7s ease-in;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
+  background: #FBFBFD;
+}
+
+.dropdown:hover .dropList{
+  display: block;
+}
+
+.dropItem a{
+  padding: 5px 8px;
+}

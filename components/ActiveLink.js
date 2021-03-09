@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 
 const ActiveLink = 
  ({ children, activeClassName, ...props }) => {
-  const { asPath} = useRouter()
+  const { asPath } = useRouter()
   const child = Children.only(children)
   const childClassName = child.props.className || ''
 

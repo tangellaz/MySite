@@ -1,0 +1,45 @@
+
+/* FOOTER */
+.footer {
+  padding: 22px;
+  font-size: 12px;
+}
+
+.footNav {
+  display: flex;
+  flex-direction: row;
+  color: #1d1d1f;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+.footCol {
+  padding-right: 22px;
+  width: 100px;
+}
+
+.footer h3 {
+  font-size: 15px;
+}
+
+.navListBot {
+  list-style: none;
+  padding: 0px;
+}
+
+.navListBot li{
+  font-size: inherit;
+  padding-bottom: 10px;
+}
+
+.navListBot li a{
+  text-decoration: none;
+}
+
+.navListBot li a:hover{
+  text-decoration: underline;
+}
+
+.copyright {
+  padding: 10px 0Px;
+  color: #86868b;
+}

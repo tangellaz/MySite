@@ -1,0 +1,239 @@
+
+/* CONTACT */
+.section1Container {
+  padding: 25px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  width: 33vw;
+  padding: 10px;
+  border: #4039a8 solid 2px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 5px rgba(64, 57, 168, 0.7);
+}
+
+.contactContainer h1 {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.contactContainer aside p {
+  font-size: 16px;
+  padding-bottom: 3px;
+}
+
+.contactContainer aside {
+  padding-bottom: 0px;
+  padding-bottom: 7px;
+}
+
+.contactContainer fieldset {
+  border: 0px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px 0px 5px 0px;
+}
+
+.formElContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.compLabel {
+  position: relative;
+  height: 52px;
+  color: #767676;
+}
+
+.compInput {
+  position: absolute;
+  padding: 0;
+  bottom: 0;
+  /*width: 31.2vw;*/
+  width: calc(33vw - 20px);
+  border: 1px solid #cdc7c2;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+
+.compInput:hover {
+  border: 1px solid #4039a8;
+  box-shadow: 0 0 5px rgba(64, 57, 168, 0.7);
+}
+
+.compInput:focus {
+  border: 1px solid #4039a8;
+  box-shadow: 0 0 5px rgba(64, 57, 168, 0.7);
+}
+
+.floatingLabel {
+  position: absolute;
+  z-index: 1;
+  transform: translate3d(0.5em,calc(1.5em + 2px),0);
+}
+
+.compLabel:hover .floatingLabel {
+  color: black;
+  transform: scale(0.85) translate3d(-8%,-16%,0);
+  transition: 0.2s ease;
+}
+
+
+.compLabelSel {
+  position: relative;
+  height: 52px;
+  color: #767676;
+}
+
+.compInputSel {
+/*  position: absolute;
+  bottom: 0;
+  height: 33px;
+  font: inherit;
+  font-size: 14px;
+
+  appearance: none;
+  border: 1px solid #cdc7c2;
+  border-radius: 5px;
+  background: #ffffff;
+  background-repeat: no-repeat;
+  background-position: right center;
+
+  padding-left: 3px*/
+}
+
+.floatingLabelSel {
+  position: absolute;
+  z-index: 1;
+  transform: translate3d(0.5em,calc(1.5em + 2px),0);
+  background: #ffffff;
+  width: 100px;
+}
+
+.compLabelSel:hover .floatingLabelSel{
+  color: black;
+  transform: scale(0.85) translate3d(-8%,-16%,0);
+  transition: 0.2s ease;
+  background: none;
+}
+
+.compLabelText {
+  position: relative;
+  height: 197px;
+  color: #767676;
+}
+
+.compLabelText:hover .floatingLabel {
+  color: black;
+  transform: scale(0.85) translate3d(-8%,-16%,0);
+  transition: 0.2s ease;
+}
+
+.compInputText {
+  position: absolute;
+  padding: 0;
+  bottom: 0;
+  width: calc(33vw - 20px);
+  border: 1px solid #cdc7c2;
+  padding: 6px 8px;
+  border-radius: 5px;
+}
+
+.compInputText:hover {
+  border: 1px solid #4039a8;
+  box-shadow: 0 0 5px rgba(64, 57, 168, 0.7);
+}
+
+.compInputText:focus {
+  border: 1px solid #4039a8;
+  box-shadow: 0 0 5px rgba(64, 57, 168, 0.7);
+}
+
+.compLabelText:hover .floatingLabel {
+  color: black;
+  transform: scale(0.85) translate3d(-8%,-16%,0);
+  transition: 0.2s ease;
+}
+
+.reqField {
+  font-size: 12px;
+  padding-bottom: 3px;
+}
+
+.sendButton1 {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+.sendButton1:hover {
+  color: #4039a8
+}
+
+.iconDefault1 {
+  display: block;
+  width: 20px;
+  height: 20px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  padding: 0px 3px 0px 0px;
+  margin: 0px;
+}
+
+.pathDefault {
+  display: block;
+}
+
+.pathHover {
+  display: none;
+}
+
+.sendButton1:hover .pathDefault {
+  display: none;
+}
+
+.sendButton1:hover .pathHover {
+  display: block;
+}
+
+.iconDefault {
+  display: block;
+  width: 20px;
+  height: 20px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  padding: 0px 3px 0px 0px;
+  margin: 0px;
+}
+
+.sendButton:hover .iconDefault {
+  display: none;
+}
+
+.iconHover {
+  display: none;
+  width: 20px;
+  height: 20px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  padding: 0px 3px 0px 0px;
+  margin: 0;
+}
+
+.sendButton:hover .iconHover {
+  display: block;
+}

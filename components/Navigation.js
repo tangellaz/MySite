@@ -1,88 +1,87 @@
 import React from 'react';
 import Link from 'next/link';
 import ActiveLink from '../components/ActiveLink';
-import StylesNav from '../components/StylesNav';
 import { useRouter } from 'next/router'
-import styles from '../styles/home.module.css'
-
+import StylesNav from '../static/StylesNav';
+import stylesN from './Navigation.module.css';
 
 const Navigation = () => {
 
   return (
-    <nav aria-label="Site Navigation" className={styles.nav}>
+    <nav aria-label="Site Navigation" className={stylesN.nav}>
     <StylesNav/>
-      <ul className={styles.ul}>
+      <ul className={stylesN.ul}>
 
         <li>
           <Link href="/">
           <a>
-            <img src="AZWWLogo2.svg" className={styles.icon2}/>
+            <img src="AZWWLogo2Minified.svg" className={stylesN.icon2}/>
           </a>
           </Link>
         </li>
 
-        <li className={styles.li}>
+        <li className={stylesN.li}>
           <ActiveLink activeClassName="active" href="/">
-            <a className={styles.a}>Home</a>
+            <a className={stylesN.a}>Home</a>
           </ActiveLink>
         </li>
 
-        <li className={styles.li}>
+        <li className={stylesN.li}>
           <ActiveLink activeClassName="active" href="/about">
-            <a className={styles.a}>About</a>
+            <a className={stylesN.a}>About</a>
           </ActiveLink>
         </li>
 
-        <li className={styles.li}>
+        <li className={stylesN.li}>
           <ActiveLink activeClassName="active" href="/services">
-            <a className={styles.a}>Services</a>
+            <a className={stylesN.a}>Services</a>
           </ActiveLink>
         </li>
 
-{/*        <li className={styles.li,styles.dropdown}>
-          <div className={styles.dropBtn}>
+{/*        <li className={stylesN.li,stylesN.dropdown}>
+          <div className={stylesN.dropBtn}>
             <ActiveLink activeClassName="active" href="/dropdown">
-              <a className={styles.aDrop}>Dropdown</a>
+              <a className={stylesN.aDrop}>Dropdown</a>
             </ActiveLink>
-            <svg className={styles.caret}>
+            <svg className={stylesN.caret}>
               <polyline points="3,7 8,11 13,7"/>
             </svg>
           </div>
 
-          <div className={styles.dropContainer}>
-              <ul className={styles.dropList}>
-                <li className={styles.dropItem}>
+          <div className={stylesN.dropContainer}>
+              <ul className={stylesN.dropList}>
+                <li className={stylesN.dropItem}>
                   <ActiveLink activeClassName="active" href="/item1">
-                    <a className={styles.a}>Item1</a>
+                    <a className={stylesN.a}>Item1</a>
                   </ActiveLink>
                 </li>
-                <li className={styles.dropItem}>
+                <li className={stylesN.dropItem}>
                   <ActiveLink activeClassName="active" href="/item2">
-                    <a className={styles.a}>Item2</a>
+                    <a className={stylesN.a}>Item2</a>
                   </ActiveLink>
                 </li>
               </ul>
           </div>
         </li>*/}
 
-        <li className={styles.li,styles.dropdown}>
-          <div className={styles.dropBtn}>
+        <li className={stylesN.li,stylesN.dropdown}>
+          <div className={stylesN.dropBtn}>
             <p>Dropdown</p>
-            <svg className={styles.caret}>
+            <svg className={stylesN.caret}>
               <polygon points="3,7 8,11 13,7"/>
             </svg>
           </div>
 
-          <div className={styles.dropContainer}>
-              <ul className={styles.dropList}>
-                <li className={styles.dropItem}>
+          <div className={stylesN.dropContainer}>
+              <ul className={stylesN.dropList}>
+                <li className={stylesN.dropItem}>
                   <ActiveLink activeClassName="active" href="/item1">
-                    <a className={styles.a}>Item1</a>
+                    <a className={stylesN.a}>Item1</a>
                   </ActiveLink>
                 </li>
-                <li className={styles.dropItem}>
+                <li className={stylesN.dropItem}>
                   <ActiveLink activeClassName="active" href="/item2">
-                    <a className={styles.a}>Item2</a>
+                    <a className={stylesN.a}>Item2</a>
                   </ActiveLink>
                 </li>
               </ul>
@@ -90,32 +89,32 @@ const Navigation = () => {
         </li>
 
 
-{/*        <li className={styles.li,styles.dropdown}>
-          <button className={styles.dropBtn}>Dropdown
-            <svg class="svg-triangle" className={styles.caret}>
+{/*        <li className={stylesN.li,stylesN.dropdown}>
+          <button className={stylesN.dropBtn}>Dropdown
+            <svg class="svg-triangle" className={stylesN.caret}>
               <polygon points="2,8 20,8 11,18"/>
             </svg>
           </button>
 
-          <div className={styles.dropContainer}>
-              <ul className={styles.dropList}>
-                <li className={styles.dropItem}>
+          <div className={stylesN.dropContainer}>
+              <ul className={stylesN.dropList}>
+                <li className={stylesN.dropItem}>
                   <ActiveLink activeClassName="active" href="/item1">
-                    <a className={styles.a}>Item1</a>
+                    <a className={stylesN.a}>Item1</a>
                   </ActiveLink>
                 </li>
-                <li className={styles.dropItem}>
+                <li className={stylesN.dropItem}>
                   <ActiveLink activeClassName="active" href="/item2">
-                    <a className={styles.a}>Item2</a>
+                    <a className={stylesN.a}>Item2</a>
                   </ActiveLink>
                 </li>
               </ul>
           </div>
         </li>*/}
 
-        <li className={styles.liContact}>
+        <li className={stylesN.liContact}>
           <ActiveLink activeClassName="active" href="/contact">
-            <a className={styles.a}>Contact</a>
+            <a className={stylesN.a}>Contact</a>
           </ActiveLink>
         </li>
 

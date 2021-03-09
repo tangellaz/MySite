@@ -1,12 +1,33 @@
+import Head from 'next/head';
 import Link from 'next/link';
+import Navigation from '../components/Navigation';
+import NavigationFooter from '../components/NavigationFooter';
+import styles from '../styles/home.module.css';
+import stylesS from './services.module.css';
+
 
 const Services = () => (
   <div>
-    <h1>Services</h1>
-    <Link href='/'>
-      <button>Back</button>
-    </Link>
+    <Head>
+      <title>Services</title>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    </Head>
+
+    <Navigation/>
+
+    <main>
+    <div className={styles.section1}>
+      <div className={stylesS.section1Container1}>
+        <div className={stylesS.cover}>
+        <h1 className={stylesS.devMessage}>Page Under Development</h1>
+        </div>
+      </div>
+    </div>
+    </main>
+    
+    <div className={styles.divider}></div>
+    <NavigationFooter/>
+
   </div>
 )
-
-export default Services
+export default Services;
