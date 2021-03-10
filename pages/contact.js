@@ -6,6 +6,40 @@ import NavigationFooter from '../components/NavigationFooter';
 import styles from '../styles/home.module.css';
 import stylesC from './contact.module.css';
 
+// Hook
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+
+  useEffect(() => {
+    // only execute all the code below in client side
+    if (typeof window !== 'undefined') {
+      // Handler to call on window resize
+      function handleResize() {
+        // Set window width/height to state
+        setWindowSize({
+          width: window.innerWidth,
+          height: window.innerHeight,
+        });
+      }
+    
+      // Add event listener
+      window.addEventListener("resize", handleResize);
+     
+      // Call handler right away so state gets updated with initial window size
+      handleResize();
+    
+      // Remove event listener on cleanup
+      return () => window.removeEventListener("resize", handleResize);
+    }
+  }, []); // Empty array ensures that effect is only run on mount
+  return windowSize;
+}
+
 const Contact = () => {
   let myFormRef;
   let myNameRef;
@@ -27,6 +61,8 @@ const Contact = () => {
   const [honeypot, setHoneypot] = useState("");
 
   const [hoverFlag, setHoverFlag] = useState(false);
+
+  const {width, height} = useWindowSize();
 
     // xhr.onreadystatechange = function() {
     //     if (xhr.readyState === 4 && xhr.status === 200) {
@@ -156,12 +192,13 @@ const Contact = () => {
                   onChange={(e)=>setSubject(e.target.value)}
                   ref={(el) => mySubjectRef}
                   value={subject}
-                  style={{width:'33vw',height:'33px',font:'inherit',fontSize:'14px',padding:'6px 8px',position:'absolute',bottom:'0',appearance:'none',border:'1px solid #cdc7c2',borderRadius:'5px',background:'#ffffff',
+                  style={{height:'33px',font:'inherit',fontSize:'14px',padding:'6px 8px',position:'absolute',bottom:'0',appearance:'none',border:'1px solid #cdc7c2',borderRadius:'5px',background:'#ffffff',
                     backgroundImage:`url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16px' height='16px'%3E%3Cpolygon points='3,7 8,11 13,7'/%3E%3C/svg%3E")`,
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'right 3px center',
                     border: subject==""&&subjectEvent==0?'1px solid #cdc7c2':'1px solid #4039a8',
-                    boxShadow:subjectEvent==1?'0 0 5px rgba(64, 57, 168, 0.7)':'none'
+                    boxShadow:subjectEvent==1?'0 0 5px rgba(64, 57, 168, 0.7)':'none',
+                    width: width>=768?'33vw':'75vw'
                   }}
                   onMouseEnter={subjectEvent==0?(e)=>setSubjectEvent(1):null}
                   onMouseLeave={subjectEvent==1?(e)=>setSubjectEvent(0):null}
