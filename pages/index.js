@@ -5,10 +5,14 @@ import Navigation from '../components/Navigation';
 import NavigationFooter from '../components/NavigationFooter';
 import Card from '../components/Card';
 import PriceCard from '../components/PriceCard';
+import WindowSize from '../components/WindowSize';
 import styles from '../styles/home.module.css';
 import stylesI from './index.module.css';
 
 const Index = () => {
+
+  const {width, height} = WindowSize();
+
 
 return(
   <div>
@@ -32,13 +36,13 @@ return(
                 <h1>and</h1>
                 <h1>Management Services</h1>
                 <h2>Allowing you to focus<br/>on your business.</h2>
-                {/*<p>Irure enim pariatur excepteur minim ut officia ut sed quis quis irure amet culpa eiusmod fugiat labore labore ut duis esse enim anim nisi ex laboris in consectetur minim officia occaecat nisi laborum duis in tempor est.</p>*/}
               </div>
+
+              <img src="MdFlipMini.png" className={stylesI.image}/>
           {/*</div>*/}
 
           {/*<div className={styles.section1Container2}>*/}
-            
-              {/*<img src="LgstFlipMini.png"/>*/}
+              {/*{width<768?<img src="MdFlipMini.png" style={{width:width*0.9}}/>:null}*/}
             </div>
           </div>
 

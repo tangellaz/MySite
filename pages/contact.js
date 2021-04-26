@@ -1,44 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import WindowSize from '../components/WindowSize';
 import Navigation from '../components/Navigation';
 import NavigationFooter from '../components/NavigationFooter';
 import styles from '../styles/home.module.css';
 import stylesC from './contact.module.css';
 
-// Hook
-function useWindowSize() {
-  // Initialize state with undefined width/height so server and client renders match
-  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
-  const [windowSize, setWindowSize] = useState({
-    width: undefined,
-    height: undefined,
-  });
 
-  useEffect(() => {
-    // only execute all the code below in client side
-    if (typeof window !== 'undefined') {
-      // Handler to call on window resize
-      function handleResize() {
-        // Set window width/height to state
-        setWindowSize({
-          width: window.innerWidth,
-          height: window.innerHeight,
-        });
-      }
-    
-      // Add event listener
-      window.addEventListener("resize", handleResize);
-     
-      // Call handler right away so state gets updated with initial window size
-      handleResize();
-    
-      // Remove event listener on cleanup
-      return () => window.removeEventListener("resize", handleResize);
-    }
-  }, []); // Empty array ensures that effect is only run on mount
-  return windowSize;
-}
 
 const Contact = () => {
   let myFormRef;
@@ -62,7 +31,7 @@ const Contact = () => {
 
   const [hoverFlag, setHoverFlag] = useState(false);
 
-  const {width, height} = useWindowSize();
+  const {width, height} = WindowSize();
 
     // xhr.onreadystatechange = function() {
     //     if (xhr.readyState === 4 && xhr.status === 200) {

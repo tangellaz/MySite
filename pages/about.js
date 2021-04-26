@@ -19,7 +19,7 @@ const About = () => (
     <div className={styles.section1}>
       <div className={stylesA.section1Container1}>
         <div className={stylesA.cover}>
-        <h1 className={stylesA.devMessage}>Page Under Development</h1>
+        <h1 className={stylesA.devMessage}>Under Development</h1>
         </div>
       </div>
     </div>

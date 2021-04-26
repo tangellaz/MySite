@@ -20,7 +20,7 @@ const Services = () => (
     <div className={styles.section1}>
       <div className={stylesS.section1Container1}>
         <div className={stylesS.cover}>
-        <h1 className={stylesS.devMessage}>Page Under Development</h1>
+        <h1 className={stylesS.devMessage}>Under Development</h1>
         </div>
       </div>
     </div>

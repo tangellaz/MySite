@@ -5,7 +5,7 @@
 
 .cover {
   background-image: url(../public/UnderConstruction.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center top;
   height: 100vh;

@@ -77,7 +77,7 @@
 .floatingLabel {
   position: absolute;
   z-index: 1;
-  transform: translate3d(0.5em,calc(1.5em + 2px),0);
+  transform: translate3d(0.5em,calc(24px + 2px),0);
 }
 
 .compLabel:hover .floatingLabel {
@@ -113,7 +113,7 @@
 .floatingLabelSel {
   position: absolute;
   z-index: 1;
-  transform: translate3d(0.5em,calc(1.5em + 2px),0);
+  transform: translate3d(0.5em,calc(24px + 2px),0);
   background: #ffffff;
   width: 100px;
 }
